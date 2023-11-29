@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //api - application program interface
+
+
+        /*
+        rest //url
+        
+        get or fetch
+        post
+        put 
+        delete
+
+        catch(e)
+        mediator
+
+        sync
+        
+        JSON - javasSriptObjectNotation
+        */
+
+        var a = fetch('https://fakestoreapi.com/users')
+        .then(res => res.json())
+        .then(a => console.log(a))  //any parameter can be given here
+
+        // console.log(a)
+
+        // destructuring of var
+
+        var a = {
+
+            name : 'abc',
+            age : 22,
+            address :{
+                perm:'a',
+                temp:'f',
+            }
+        }
+
+        let {temp} = a.address
+
+        console.log(a)
+    </script>
+
+</body>
+</html>
